@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:Notes.Models"
+             x:Class="Notes.Views.AboutPage"
+             Title="About - Josue Riera">
+    <ContentPage.BindingContext>
+        <models:About />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout Margin="10" Spacing="20">
+
+            <Label 
+                FontSize="22" 
+                FontAttributes="Bold" 
+                Text="Un poco sobre Josue Riera"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                />
+
+            <Label 
+                Margin="0"
+                FontSize="18" 
+                Text="Mi nombre es Josue Riera, hoy tuve un domingo de novios profe estuvo 10/10 y aja soy de riobamba y tengo 19 anitos"                HorizontalTextAlignment="Center"
+                LineBreakMode="WordWrap"
+                />
+
+            <Label 
+                Margin="0, 20, 0, 0"
+                FontSize="22" 
+                FontAttributes="Bold" 
+                Text="Ícono que me representa"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                />
+
+            <Image Source="icon_software.png"
+                   HorizontalOptions="Center" />
+
+            <Label 
+                Margin="0, 20, 0, 0"
+                FontSize="22" 
+                FontAttributes="Bold" 
+                Text="Meme que pidió el profe"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                />
+
+            <Image Source="icon_meme.jpg"
+                   HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
